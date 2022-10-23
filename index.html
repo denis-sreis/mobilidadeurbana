@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="">
+
+    <title>Mobilidade Urbana</title>
+</head>
+<body>
+    <header>
+        <aside class="flex between" id="header_header">
+
+            <section>
+                <img id="Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Instituto_Federal_Marca_2015.svg/640px-Instituto_Federal_Marca_2015.svg.png" alt="">
+                <p id="IF"> Instituto Federal Goiano </p>
+            </section>
+
+            <section>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Mobilidade Estudantil</a></li>
+                        <li><a href="#">Importância</a></li>
+                        <li><a href="#">Projeto</a> </li>
+                    </ul>
+                </nav>
+            </section>
+            
+            <section>
+                <div class="box-2" id="Quest">
+                    <div class="btn btn-two">
+                        <span>Questionário</span>
+                    </div>
+                </div>
+            </section>
+
+        </aside>
+        
+        <section class="flex margem" id="'mu'">
+            <div>
+                <h1 id="Titulo">Mobilidade <br>Urbana</h1>
+                <p id="txt1">A mobilidade urbana é definida como a capacidade de deslocar de um ponto para outro dentro de um meio urbano. Esse conceito se aplica a todos meios de locomoção.</p>
+                <div class="box-1" id="BotaoHeader">
+                    <div class="btn btn-one">
+                        <span>Entender melhor</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+                <img id="Onibus" src="https://static.wixstatic.com/media/a3fe12_e5e9bedc81eb498cb65b94c9e31de24f~mv2.png/v1/fill/w_402,h_244,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/onibus%20escolar.png" alt="">
+            </div>
+        </section>
+    </header>
+    
+    <aside id="parte2" class="flex margem">
+        <section id="tabela">
+            <canvas id="myChart">
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+                    const data = {
+                            labels: [
+                            'Bicicleta',
+                            'Automóvel',
+                            'Ônibus e Van',
+                            'Andando',
+                            'Motocicleta'
+                            ],
+                            datasets: [{
+                            label: 'My First Dataset',
+                            data: [17, 33, 36, 7, 7],
+                            backgroundColor: [
+                            'rgb(255, 99, 132)',
+                            'rgb(75, 192, 192)',
+                            'rgb(255, 205, 86)',
+                            'rgb(201, 203, 207)',
+                            'rgb(54, 162, 235)'
+                            ]
+                            }]
+                        };
+                      
+                    const config = {
+                            type: 'doughnut',
+                            data: data,
+                        };
+                </script>
+        
+                <script>
+                    const myChart = new Chart(
+                          document.getElementById('myChart'),
+                          config
+                        );
+                </script>     
+                </canvas>
+        </section>
+
+        <section id="locomocoes">
+            <header>
+                <h1 id="como">Como os estudantes <br> 
+                    chegam ao instituto?</h1>
+            </header>
+            <main class="flex">
+                <section id="bicicleta">
+                    <img id="icon_bicicleta" src="https://cdn-icons-png.flaticon.com/512/71/71422.png" alt="">
+                    <h3>Bicicletas</h3>
+                    <p>The only costs are for standard school supplies and voluntary field trips.</p>
+                </section>
+
+                <section id="carro">
+                    <img id="icon_carro" src="https://static.vecteezy.com/system/resources/previews/001/193/785/non_2x/car-png.png" alt="">
+                    <h3>Automóveis e Motocicletas</h3>
+                    <p>The only costs are for standard school supplies and voluntary field trips.</p>
+                </section>
+
+                <section id="pedestres">
+                    <img id="icon_pedestres" src="https://cdn-icons-png.flaticon.com/512/177/177873.png" alt="">
+                    <h3>Andando</h3>
+                    <p>The only costs are for standard school supplies and voluntary field trips.</p>
+                </section>
+
+                <section id="onibus">
+                    <img id="icon_onibus" src="https://images.vexels.com/media/users/3/134427/isolated/preview/dc565e30f7d03bbcee6a18e9e04749c6-desenho-do-onibus-escolar-plano.png" alt="">
+                    <h3>Onibus e vans</h3>
+                    <p>The only costs are for standard school supplies and voluntary field trips.</p>
+                </section>
+            </main>
+        </section>
+    </aside>
+
+    <aside id="parte3" class="flex margem">
+        <section id="importancia" >
+            <div class="texto">
+                <h1>A importância da <br> mobilidade urbana </h1>
+                <p>A importância da mobilidade urbana se dá em razão que possibilita o acesso à cidade, favorecendo aos cidadãos a locomoção no ambiente urbano, em diversos bairros e localidade, dos mais próximos aos mais distantes locais, com diversas finalidade, seja trabalho, estudo ou lazer</p>
+        
+                <div class="box-1" id="BotaoAssistir">
+                    <div class="btn btn-one">
+                        <span>Assistir no Youtube</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="video" class="margem">
+            <iframe src="https://www.youtube.com/embed/S20bp8Jo-58" title="Importância da Mobilidade Urbana" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="cinzinha"></div>
+        </section>
+    </aside>
+
+    <aside id="parte4" class="margem">
+            <section>
+                <h1 id="bbb">
+                    Requisitos para segurança e conforto na mobilidade
+                </h1>
+            </section>
+            <section class="flex between">
+                <div id="textinho_ciclista">
+                    <img id="primeira_imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT736v1y0VjOW15_NYqgmliOVAOzxdQ6IJiPA&usqp=CAU'" alt="">
+                    <h2 id="ccc">
+                        Segurança para ciclistas
+                    </h2>
+                    <p id="ddd">
+                            É importante os próprios ciclistas adotarem o uso de equipamentos de segurança. Mas não somente isso. Por parte da prefeitura a criação de ciclovias, ciclofaixas e ciclorrota, além de uma melhor sinalização para ajudar os ciclistas. É necessário também, por parte dos motoristas, respeitar os ciclistas, visto que não os respeitam                    
+                    </p>
+                </div> 
+                <div id="textinho_acessibilidade">
+                    <img id="eee" src="https://diariodainclusaosocialdotcom.files.wordpress.com/2017/11/acessibilidade.jpg" alt="">
+                    <h2 id="fff">
+                        Acessibilidade garantida
+                    </h2>
+                    <p id="ggg">
+                            É necessário implantar nas ruas e calçadas meios de garantir acessibilidades para PDC’s e PNE’s. Isso será possível por meio da ampliação de calçadas e a inserção de rampas e pisos tatéis e a adaptação de semáforos. Além de um cuidado especial com as calçadas, visto que muitas são esburacadas dificultando o acesso de, por exemplo, cadeirantes.
+                    </p>
+                </div>
+                <div id="textinho_seguranca">
+                    <img id="hhh" src="https://thumbs.dreamstime.com/b/pessoas-caminhando-na-faixa-de-pedestres-atravessando-estrada-interse%C3%A7%C3%A3o-em-uma-segura-com-placa-vazia-leis-tr%C3%A2nsito-164645631.jpg" alt="">
+                    <h2 id="iii">
+                        Segurança para pedestres
+                    </h2>
+                    <p id="jjj">
+                            Não adianta haver faixas de pedreste nas ruas se não são respeitadas. Dessa forma, é necessário, primeiramente, a conscientização por parte dos motoristas em relação ao respeito à faixas de pedrestes. Além disso, faz-se necessário também, a implantação de semáforos juntamente a faixas de pedestre, principalmente em ruas e avenidas movimentadas, para pedrestres, pois assim facilitaria a travessia nas ruas.
+                    </p>
+                </div>
+            </section>
+    </aside>
+
+    
+</body>
+</html>
